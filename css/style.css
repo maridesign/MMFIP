@@ -1,0 +1,1101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to right, #000, #040B2B);
+}
+
+body {
+    margin-top: 10px;
+}
+
+a:link, a:visited,
+a:hover, a:active {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.contact_page {
+    font-family: 'Montserrat Alternates', sans-serif;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #000, #62098C, #000);
+    box-shadow: 0 0 50px #7C1FB2;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.contact_page:hover {
+    cursor: pointer;
+    
+}
+
+.divider {
+    display: block;
+}
+
+/* ----- grid ----- */ 
+
+.container {
+    max-width: 980px;
+    min-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    margin: 0 6%;
+}
+
+.row::after {
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.block_nav {
+    width: 70%;
+    float: left;
+}
+
+.block_contact {
+    width: 30%;
+    float: left;
+    margin-top: 7px;
+}
+
+.block_max_width {
+    width: 100%;
+    float: left;
+}
+
+/* ----- grid end ----- */
+
+/* ----- site-header ----- */
+
+.site_header {
+    min-height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo_block a > img {
+    width: 180px;
+}
+
+.slogan {
+    margin-left: 20px;
+    position: relative;
+    top: -5px;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 2%;
+    padding: 3px 3% 3px 0;
+    border-right: 1px solid #FF2EAD;
+}
+
+.nav li a {
+    color: #fff;
+}
+
+.nav ul li:last-of-type {
+    border-right: none;
+}
+
+.nav ul li:hover {
+    cursor: pointer;
+    text-shadow: 5px 5px 3px #FF2EAD;
+}
+
+.nav ul li a.active {
+    color: #EC008C;
+}
+
+.social_networks {
+    text-align: center;
+}
+
+.social_networks ul {
+    margin-top: 25px;
+}
+
+.social_networks .contact_page {
+    padding: 3% 20%;
+    margin: 15px 0 20px 0;
+    color: #fff;
+}
+
+.social_networks ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.social_networks ul li:last-of-type {
+    margin-left: 20px;
+}
+
+.social_networks ul li img {
+    width: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contact_page {
+    color: #fff;
+}
+
+.home_page {
+    padding-top: 36px;
+    background-image: url(../images/pink_silks.png);
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: 70% -60px;
+}
+
+/* ----- description-site ----- */
+
+.description_site {
+    min-height: 750px;
+}
+
+.description_site p:first-of-type {
+    margin-top: 240px;
+}
+
+.description_site p {
+    line-height: 1.5;
+    margin: 13px 0;
+}
+
+.description_site .block_max_width p {
+    margin-top: 0;
+}
+
+/* ----- team-data ----- */
+
+.team_data {
+    width: 100%;
+    padding-top: 65px;
+ 
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.team {
+    width: 27%;
+    min-width: 160px;
+    min-height: 253px;
+    padding: 23px 0 20px 0;
+    border-radius: 15px;
+    background: #26033F;
+    text-align: center;
+    
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.team ul li {
+    line-height: 1.5;
+    padding-top: 11px;
+    font-size: 1.125rem;
+}
+
+/* ----- timetable ----- */
+
+.timetable {
+    border-radius: 15px;
+    background: linear-gradient(to right, #000010 15%, #63068E 50%, #000010 85%);
+    box-shadow: 0 0 30px rgb(244, 198, 243);
+    text-align: center;
+    margin: 35px 0;
+}
+
+.timetable h2 {
+    padding: 23px 0 25px 0;
+}
+
+.timetable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.timetable table td {
+    padding: 12px 5px;
+    vertical-align: middle;
+}
+
+.timetable table th {
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.timetable table tr:last-of-type td {
+    padding-bottom: 17px;
+}
+
+/* ---- buttons ----- */
+
+.buttons {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.buttons div{
+    border-radius: 15px;
+    padding: 10px 9%;
+    background: linear-gradient(to right, #000, #62098C, #000);
+    box-shadow: 0 0 50px #A50CAA;
+    border-radius: 15px;
+
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.buttons div a {
+    color: #EC008C;
+}
+
+.buttons div:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px rgb(244, 198, 243);
+}
+
+/* ---- site-footer ----- */
+
+.site_footer {
+    margin-top: 60px;
+}
+
+.site_footer .nav {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.site_footer .nav .social_networks {
+    margin: 30px 0 40px 0;
+}
+
+.site_footer .nav .social_networks ul li {
+    border: none;
+    padding: 0;
+}
+
+.site_footer p {
+    padding-bottom: 20px;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+/* ========== TEAMS PAGE ========== */
+
+.teams_page {
+    min-height: 1575px;
+    padding-top: 36px;
+    background-image: url(../images/muscle.png);
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    background-position: 50% bottom;
+    position: relative;
+}
+
+.teams_page .gymnast {
+    position: absolute;
+    top: 6%;
+    left: 18%;
+}
+
+.teams_classes_info {
+    min-height: 94px;
+    background: linear-gradient(to right, #c50590, #32004A, #000010);
+    margin: 60px 0;
+}
+
+.teams_classes_info::after {
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.teams_classes_info .left_col {
+    width: 25%;
+    margin-right: 5%;
+    float: left;
+}
+
+.teams_classes_info .right_col {
+    width: 70%;
+    float: right;
+}
+
+.teams_classes_info .right_col_min {
+    width: 55%;
+    float: right;
+}
+
+.teams_classes_info h2{
+    padding-top: 15px;
+}
+
+.teams_classes_info p {
+    padding: 15px 0 12px 0;
+    line-height: 1.2;
+}
+
+.teams_page .site_footer {
+    margin-top: 255px;
+}
+
+/* ========== ADDITION PAGE ========== */
+
+.addition_page {
+    min-height: 1300px;
+    padding-top: 36px;
+    background-image: url(../images/base.png);
+    background-repeat: no-repeat;
+    background-size: auto 43%;
+    background-position: 69% bottom;
+    position: relative;
+}
+
+.addition_page .gymnast_fly {
+    position: absolute;
+    top: -20px;
+    right: 32%;
+}
+
+.addition_page .site_footer {
+    margin-top: 465px;
+}
+
+.addition_content_wrap {
+    position: relative;
+}
+
+.addition_content_wrap::after {
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both;
+}
+
+.strip {
+    width: 90px;
+    min-height: 1457px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background:linear-gradient(to bottom, #000010, #32004A, #C90DBC);
+}
+
+.addition_content_inner {
+    width: 85%;
+    margin-left: 20px;
+    margin-top: 100px;
+    float: right;
+}
+
+.addition_content {
+    margin-bottom: 20px;
+}
+
+.addition_content:last-of-type {
+    margin-bottom: 0;
+}
+
+.addition_page h2 {
+    font-size: 2rem;
+    color: #92278F;
+}
+
+.addition_page p {
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+
+.addition_page p > a {
+    color: #92278F;
+
+}
+
+.addition_page p > a:hover {
+    display: inline-block;
+    text-shadow: 1px 1px 5px white;
+}
+
+/* ========== EVENTS PAGE ========== */
+
+.events_page {
+    min-height: 800px;
+    padding-top: 36px;
+    position: relative;
+}
+
+.events_page .hoop {
+    position: absolute;
+    top: 0;
+    right: 27%;
+}
+
+.events_wrap {
+    margin-top: 90px;
+}
+
+.event {
+    width: 44%;
+    min-width: 245px;
+    min-height: 130px;
+    padding: 15px 20px 20px 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    line-height: 1.5;
+}
+
+.event:nth-child(1) {
+    box-shadow: 0 0 20px #040CA5;
+}
+
+.event:nth-child(2) {
+    box-shadow: 0 0 20px #F15A29;
+}
+
+.event:nth-child(3) {
+    box-shadow: 0 0 20px #0B991C;
+}
+
+.event h3 {
+    font-size: 1.5rem;
+}
+
+.event p {
+    font-size: 1.25rem;
+}
+
+/* ========== CONTACT ========== */
+
+.contact_page {
+    min-height: 800px;
+    padding-top: 36px;
+    position: relative;
+}
+
+.contact_page .upsidown {
+    position: absolute;
+    top: 7%;
+    right: 16%;
+}
+
+.form {
+    margin-top: 90px;
+}
+
+.form div {
+    margin-top: 20px;
+}
+
+.form h2 {
+    margin: 20px 0 30px 0;
+}
+
+form p {
+    display: inline-block;
+    width: 210px;
+}
+
+form input, select {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+select {
+    cursor: pointer;
+}
+
+form textarea {
+    width: 250px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.message_field {
+    vertical-align: top;
+}
+
+input[type="submit"] {
+    width: 100px;
+    margin-top: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: block;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 30px #fff;
+}
+
+.contact_page .contacts {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.contacts p {
+    margin-bottom: 10px;
+}
+
+/* ========== REGISTRATION PAGE =========== */
+
+.registration_page {
+    min-height: 1900px;
+    padding-top: 36px;
+    background-image: url(../images/group.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 50% bottom;
+}
+
+.registration_page .form {
+    display: inline-block;
+    width: 60%;
+}
+
+.registration_page .contacts {
+    display: inline-block;
+    width: 34%;
+    margin-top: 90px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.quantity_label {
+    position: relative;
+    top: 10px;
+}
+
+.registration_page h4 {
+    margin: 40px 0 20px 0;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+
+.registration_page .site_footer {
+    margin-top: 860px;
+}
+
+/* =========== SLIDER ========== */
+
+.slider_wrap {
+    display: none;
+    border: 1px solid #000;
+    width: 700px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.slider {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+.slider .opacity0 {
+    opacity: 0;
+}
+
+.btn_slider_right, .btn_slider_left {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+}
+
+.btn_slider_right {    
+    background: url(../images/to_right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: 730px;
+    top: -240px;
+}
+
+.btn_slider_left {
+    background: url(../images/to_left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    left: -180px;
+    top: -240px;
+}
+
+/* ====== mobile ====== */
+
+@media screen and (max-width: 1200px) {
+    .home_page {
+        background-position: 78% -60px;
+    }
+
+    .addition_page .gymnast_fly {
+        right: 28%;
+    }
+
+    .events_page .hoop {
+        right: 20%;
+    }
+
+    .contact_page .upsidown {
+        display: none;
+    }
+
+    .registration_page {
+        background-size: auto 80%;
+        background-position: 57% bottom;
+    }
+
+    .registration_page .site_footer {
+        margin-top: 500px;
+    }
+
+    .registration_page {
+        min-height: 1460px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .home_page {
+        background-position: 90% -60px;
+    }
+
+    .teams_page .gymnast {
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .addition_page .gymnast_fly {
+        display: none;
+    }
+
+    .addition_page .divider {
+        display: inline;
+    }
+
+    .strip {
+        min-height: 1433px;
+    }
+
+    .events_page .hoop {
+        display: none;
+    }
+
+    .registration_page {
+        background: none;
+    }
+
+    .registration_page .site_footer {
+        margin-top: 60px;
+    }
+
+    .registration_page {
+        min-height: 1000px;
+    }
+
+    .slider_wrap {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .slider {
+        width: 500px;
+        height: 300px;
+    }
+    
+    .slider img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .btn_slider_right {    
+        left: 520px;
+        top: -180px;
+    }
+    
+    .btn_slider_left {
+        left: -170px;
+        top: -180px;
+    }
+    
+}
+
+@media screen and (max-width: 955px) {
+    .teams_page .site_footer {
+        margin-top: 242px;
+    }
+}
+
+@media screen and (max-width: 907px) {
+    .teams_page .site_footer {
+        margin-top: 223px;
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .home_page {
+        background-size: auto 46%;
+        background-position: 100% -60px;
+    }
+
+    .teams_page {
+        background: none;
+        min-height: 1460px;
+    }
+
+    .teams_page .site_footer {
+        margin-top: 60px;
+    }
+
+    .form {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .registration_page .form {
+        width: 100%;
+    }
+
+    .contact_page .contacts {
+        text-align: center;
+    }
+
+    .registration_page .contacts {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    form input[type="submit"] {
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    .block-70, .block-30, .teams_classes_info .right_col_min, .addition_content_inner {
+        width: auto;
+        float: none;
+    }
+
+    .divider {
+        display: inline;
+    }
+
+    .home_page {
+        background-image: none;
+    }
+
+    .teams_page {
+        min-height: 1800px;
+    }
+
+    .teams_page .gymnast {
+        display: none;
+    }
+
+    .strip {
+        display: none;
+    }
+
+    .md_block {
+        width: 100%;
+        float: left;
+    }
+
+    .site_header {
+        text-align: center;
+    }
+
+    .logo_block {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social_networks {
+        margin-top: 45px;
+    }
+
+    .social_networks .contact_page {
+        padding: 2% 10%;
+        margin: 25px 0 20px 0;
+    }
+
+    .description_site .md_block p:first-of-type {
+        margin-top: 35px;
+    }
+
+    .description_site {
+        min-height: 300px;
+    }
+
+    .team_data {
+        padding-top: 50px
+    }
+
+    .addition_page {
+        min-height: 1516px;
+    }
+
+    .addition_content_inner {
+        margin-top: 100px;
+    }
+    
+    .events_wrap {
+        margin-top: 210px;
+    }
+
+    .event {
+        margin: 30px auto;
+    }
+
+    .form {
+        text-align: center;
+        margin: 0;
+    }
+
+    .form p {
+        margin-bottom: 10px;
+    }
+
+    .form h2 {
+        margin: 40px 0 30px 0;
+    }
+
+    form input[type="submit"] {
+        margin: 20px auto 0 auto;
+    }
+
+    .registration_page .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .buttons {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .buttons div {
+        width: 202px;
+        margin-bottom: 15px;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 642px) {
+    .addition_page {
+        min-height: 1140px;
+        background-image: none;
+    }
+
+    .addition_page .site_footer {
+        margin-top: 30px;
+    }
+
+    .teams_page {
+        background-image: none;
+        min-height: 1500px;
+    }
+
+    .teams_page .site_footer {
+        margin-top: 70px;
+    }
+
+    .slogan {
+        display: inline-block;
+        margin: 20px 0 0 10px;
+        text-align: center;
+    }
+
+    .social_networks .contact_page {
+        padding: 3% 10%;
+    }
+
+    .team_data {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .team {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .timetable table th {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .timetable table th {
+        font-size: 0.7rem;
+    }
+
+    .timetable table td {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    table {
+        font-size: 0.7rem;
+    }
+
+    .events_wrap {
+        margin-top: 230px;
+    }
+
+}
+
+@media screen and (max-width: 438px) {
+    .events_wrap {
+        margin-top: 270px;
+    }
+}
